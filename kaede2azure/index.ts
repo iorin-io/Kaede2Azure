@@ -54,7 +54,7 @@ const httpTrigger: AzureFunction = async function (
     } else if (action == "stop") {
       axios.get(STOPURL);
       //fetch(STOPURL);
-      
+
       context.res = {
         status: 200,
         method: "POST",
